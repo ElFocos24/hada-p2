@@ -10,8 +10,7 @@ namespace hada_p2
     {
         static void Main(string[] args)
         {
-            int drr = 0;
-            System.Console.WriteLine(drr);
+
         }
     }
 }
