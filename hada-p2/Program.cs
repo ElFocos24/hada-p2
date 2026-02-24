@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace hada_p2
+
+namespace Hada
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int drr = 0;
-            System.Console.WriteLine(drr);
+
         }
     }
 }
