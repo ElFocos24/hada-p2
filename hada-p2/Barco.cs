@@ -28,12 +28,13 @@ namespace Hada
                 {
                     nuevaCoordenada = new Coordenada(coordenadaInicio.Fila, coordenadaInicio.Columna + i);
                 }
-                else
+                else if (orientacion == 'v')
                 {
                     nuevaCoordenada = new Coordenada(coordenadaInicio.Fila + i, coordenadaInicio.Columna);
                 }
+                else throw ArgumentOutOfRangeException;
 
-                this.CoordenadasBarco.Add(nuevaCoordenada, this.Nombre);
+                    this.CoordenadasBarco.Add(nuevaCoordenada, this.Nombre);
             }
         }
 
