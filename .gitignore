@@ -7,3 +7,5 @@
 /hada-p2/obj
 /.vs
 /hada-p2/.vs
+/hada-p2/obj/Release/hada-p2.csproj.AssemblyReference.cache
+/.vs/slnx.sqlite
