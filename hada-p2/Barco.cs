@@ -32,7 +32,7 @@ namespace Hada
                 {
                     nuevaCoordenada = new Coordenada(coordenadaInicio.Fila + i, coordenadaInicio.Columna);
                 }
-                else throw ArgumentOutOfRangeException;
+                else throw new ArgumentOutOfRangeException();
 
                     this.CoordenadasBarco.Add(nuevaCoordenada, this.Nombre);
             }
@@ -46,13 +46,13 @@ namespace Hada
                 {
                     this.CoordenadasBarco[c] += "_T";
 
-                    eventoTocado?.Invoke(this, new TocadoArgs { nombre = this.Nombre, coordenadaImpacto = c });
+                    eventoTocado?.Invoke(this, new TocadoArgs(this.Nombre, c));
 
                     this.NumDanyos++;
 
                     if (this.hundido())
                     {
-                        eventoHundido?.Invoke(this, new HundidoArgs { nombre = this.Nombre });
+                        eventoHundido?.Invoke(this, new HundidoArgs(this.Nombre));
                     }
                 }
             }
